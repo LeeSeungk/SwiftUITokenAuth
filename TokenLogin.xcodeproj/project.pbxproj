@@ -11,6 +11,21 @@
 		96A6B24F2A1D9AEA00B16400 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B24E2A1D9AEA00B16400 /* ContentView.swift */; };
 		96A6B2512A1D9AEB00B16400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A6B2502A1D9AEB00B16400 /* Assets.xcassets */; };
 		96A6B2542A1D9AEB00B16400 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A6B2532A1D9AEB00B16400 /* Preview Assets.xcassets */; };
+		96A6B25C2A1DA4E300B16400 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B25B2A1DA4E300B16400 /* LoginView.swift */; };
+		96A6B25E2A1DA7AE00B16400 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B25D2A1DA7AE00B16400 /* RegisterView.swift */; };
+		96A6B2602A1DAA4A00B16400 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B25F2A1DAA4A00B16400 /* ProfileView.swift */; };
+		96A6B2632A1DAAA200B16400 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B2622A1DAAA200B16400 /* UserData.swift */; };
+		96A6B2662A1DC68A00B16400 /* OtherUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B2652A1DC68A00B16400 /* OtherUserProfileView.swift */; };
+		96A6B2682A1DC7E000B16400 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B2672A1DC7E000B16400 /* UserListView.swift */; };
+		96A6B26B2A1DD00E00B16400 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 96A6B26A2A1DD00E00B16400 /* Alamofire */; };
+		96A6B2702A1DD33500B16400 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B26F2A1DD33500B16400 /* ApiClient.swift */; };
+		96A6B2722A1DD44D00B16400 /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B2712A1DD44D00B16400 /* BaseInterceptor.swift */; };
+		96A6B2742A1DD52900B16400 /* ApiLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B2732A1DD52900B16400 /* ApiLogger.swift */; };
+		96A6B2762A1DD6A700B16400 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B2752A1DD6A700B16400 /* AuthRouter.swift */; };
+		96A6B2792A1DDDB700B16400 /* AuthApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B2782A1DDDB700B16400 /* AuthApiService.swift */; };
+		96A6B27B2A1DDE9B00B16400 /* TokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B27A2A1DDE9B00B16400 /* TokenData.swift */; };
+		96A6B27D2A1DDFDD00B16400 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B27C2A1DDFDD00B16400 /* AuthResponse.swift */; };
+		96A6B2802A1DE13600B16400 /* UserVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B27F2A1DE13600B16400 /* UserVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +34,21 @@
 		96A6B24E2A1D9AEA00B16400 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		96A6B2502A1D9AEB00B16400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A6B2532A1D9AEB00B16400 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96A6B25B2A1DA4E300B16400 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		96A6B25D2A1DA7AE00B16400 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		96A6B25F2A1DAA4A00B16400 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		96A6B2622A1DAAA200B16400 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		96A6B2642A1DACCE00B16400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		96A6B2652A1DC68A00B16400 /* OtherUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileView.swift; sourceTree = "<group>"; };
+		96A6B2672A1DC7E000B16400 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		96A6B26F2A1DD33500B16400 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		96A6B2712A1DD44D00B16400 /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
+		96A6B2732A1DD52900B16400 /* ApiLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogger.swift; sourceTree = "<group>"; };
+		96A6B2752A1DD6A700B16400 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		96A6B2782A1DDDB700B16400 /* AuthApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiService.swift; sourceTree = "<group>"; };
+		96A6B27A2A1DDE9B00B16400 /* TokenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenData.swift; sourceTree = "<group>"; };
+		96A6B27C2A1DDFDD00B16400 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		96A6B27F2A1DE13600B16400 /* UserVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A6B26B2A1DD00E00B16400 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +82,13 @@
 		96A6B24B2A1D9AEA00B16400 /* TokenLogin */ = {
 			isa = PBXGroup;
 			children = (
+				96A6B26C2A1DD30900B16400 /* API */,
+				96A6B26D2A1DD31200B16400 /* Router */,
+				96A6B2612A1DAA9200B16400 /* Model */,
+				96A6B25A2A1DA4D400B16400 /* View */,
+				96A6B27E2A1DE12500B16400 /* ViewModel */,
+				96A6B2642A1DACCE00B16400 /* Info.plist */,
 				96A6B24C2A1D9AEA00B16400 /* TokenLoginApp.swift */,
-				96A6B24E2A1D9AEA00B16400 /* ContentView.swift */,
 				96A6B2502A1D9AEB00B16400 /* Assets.xcassets */,
 				96A6B2522A1D9AEB00B16400 /* Preview Content */,
 			);
@@ -65,6 +101,72 @@
 				96A6B2532A1D9AEB00B16400 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96A6B25A2A1DA4D400B16400 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96A6B24E2A1D9AEA00B16400 /* ContentView.swift */,
+				96A6B25B2A1DA4E300B16400 /* LoginView.swift */,
+				96A6B25D2A1DA7AE00B16400 /* RegisterView.swift */,
+				96A6B25F2A1DAA4A00B16400 /* ProfileView.swift */,
+				96A6B2652A1DC68A00B16400 /* OtherUserProfileView.swift */,
+				96A6B2672A1DC7E000B16400 /* UserListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96A6B2612A1DAA9200B16400 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96A6B2622A1DAAA200B16400 /* UserData.swift */,
+				96A6B27A2A1DDE9B00B16400 /* TokenData.swift */,
+				96A6B27C2A1DDFDD00B16400 /* AuthResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96A6B26C2A1DD30900B16400 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				96A6B2772A1DDDAA00B16400 /* Service */,
+				96A6B26E2A1DD31800B16400 /* Interceptor */,
+				96A6B26F2A1DD33500B16400 /* ApiClient.swift */,
+				96A6B2732A1DD52900B16400 /* ApiLogger.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		96A6B26D2A1DD31200B16400 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				96A6B2752A1DD6A700B16400 /* AuthRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		96A6B26E2A1DD31800B16400 /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				96A6B2712A1DD44D00B16400 /* BaseInterceptor.swift */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		96A6B2772A1DDDAA00B16400 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				96A6B2782A1DDDB700B16400 /* AuthApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		96A6B27E2A1DE12500B16400 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				96A6B27F2A1DE13600B16400 /* UserVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +185,9 @@
 			dependencies = (
 			);
 			name = TokenLogin;
+			packageProductDependencies = (
+				96A6B26A2A1DD00E00B16400 /* Alamofire */,
+			);
 			productName = TokenLogin;
 			productReference = 96A6B2492A1D9AEA00B16400 /* TokenLogin.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +216,9 @@
 				Base,
 			);
 			mainGroup = 96A6B2402A1D9AEA00B16400;
+			packageReferences = (
+				96A6B2692A1DD00E00B16400 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 96A6B24A2A1D9AEA00B16400 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +245,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A6B2662A1DC68A00B16400 /* OtherUserProfileView.swift in Sources */,
+				96A6B2632A1DAAA200B16400 /* UserData.swift in Sources */,
+				96A6B2702A1DD33500B16400 /* ApiClient.swift in Sources */,
+				96A6B25C2A1DA4E300B16400 /* LoginView.swift in Sources */,
+				96A6B2682A1DC7E000B16400 /* UserListView.swift in Sources */,
+				96A6B25E2A1DA7AE00B16400 /* RegisterView.swift in Sources */,
+				96A6B2722A1DD44D00B16400 /* BaseInterceptor.swift in Sources */,
+				96A6B2602A1DAA4A00B16400 /* ProfileView.swift in Sources */,
 				96A6B24F2A1D9AEA00B16400 /* ContentView.swift in Sources */,
+				96A6B2802A1DE13600B16400 /* UserVM.swift in Sources */,
+				96A6B2742A1DD52900B16400 /* ApiLogger.swift in Sources */,
+				96A6B2792A1DDDB700B16400 /* AuthApiService.swift in Sources */,
+				96A6B27B2A1DDE9B00B16400 /* TokenData.swift in Sources */,
+				96A6B2762A1DD6A700B16400 /* AuthRouter.swift in Sources */,
+				96A6B27D2A1DDFDD00B16400 /* AuthResponse.swift in Sources */,
 				96A6B24D2A1D9AEA00B16400 /* TokenLoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +392,7 @@
 				DEVELOPMENT_TEAM = KSWJNKXHGB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TokenLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +422,7 @@
 				DEVELOPMENT_TEAM = KSWJNKXHGB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TokenLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +463,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96A6B2692A1DD00E00B16400 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96A6B26A2A1DD00E00B16400 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96A6B2692A1DD00E00B16400 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96A6B2412A1D9AEA00B16400 /* Project object */;
 }
