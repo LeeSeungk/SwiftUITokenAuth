@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965F7CA72A1F4A45000A9FB8 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F7CA62A1F4A45000A9FB8 /* UserDefaultManager.swift */; };
+		965F7CA92A1F4EED000A9FB8 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F7CA82A1F4EED000A9FB8 /* UserRouter.swift */; };
+		965F7CAB2A1F4FAB000A9FB8 /* UserApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F7CAA2A1F4FAB000A9FB8 /* UserApiService.swift */; };
+		965F7CAD2A1F5352000A9FB8 /* UserInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F7CAC2A1F5352000A9FB8 /* UserInfoResponse.swift */; };
+		965F7CB02A1F541B000A9FB8 /* OAuthCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F7CAF2A1F541B000A9FB8 /* OAuthCredential.swift */; };
+		965F7CB22A1F54DA000A9FB8 /* OAuthAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F7CB12A1F54DA000A9FB8 /* OAuthAuthenticator.swift */; };
 		96A6B24D2A1D9AEA00B16400 /* TokenLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B24C2A1D9AEA00B16400 /* TokenLoginApp.swift */; };
 		96A6B24F2A1D9AEA00B16400 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6B24E2A1D9AEA00B16400 /* ContentView.swift */; };
 		96A6B2512A1D9AEB00B16400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A6B2502A1D9AEB00B16400 /* Assets.xcassets */; };
@@ -29,6 +35,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		965F7CA62A1F4A45000A9FB8 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		965F7CA82A1F4EED000A9FB8 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		965F7CAA2A1F4FAB000A9FB8 /* UserApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiService.swift; sourceTree = "<group>"; };
+		965F7CAC2A1F5352000A9FB8 /* UserInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoResponse.swift; sourceTree = "<group>"; };
+		965F7CAF2A1F541B000A9FB8 /* OAuthCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthCredential.swift; sourceTree = "<group>"; };
+		965F7CB12A1F54DA000A9FB8 /* OAuthAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthAuthenticator.swift; sourceTree = "<group>"; };
 		96A6B2492A1D9AEA00B16400 /* TokenLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokenLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A6B24C2A1D9AEA00B16400 /* TokenLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenLoginApp.swift; sourceTree = "<group>"; };
 		96A6B24E2A1D9AEA00B16400 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +75,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		965F7CA52A1F4A30000A9FB8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				965F7CA62A1F4A45000A9FB8 /* UserDefaultManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		965F7CAE2A1F5409000A9FB8 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				965F7CAF2A1F541B000A9FB8 /* OAuthCredential.swift */,
+				965F7CB12A1F54DA000A9FB8 /* OAuthAuthenticator.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		96A6B2402A1D9AEA00B16400 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +111,7 @@
 		96A6B24B2A1D9AEA00B16400 /* TokenLogin */ = {
 			isa = PBXGroup;
 			children = (
+				965F7CA52A1F4A30000A9FB8 /* Manager */,
 				96A6B26C2A1DD30900B16400 /* API */,
 				96A6B26D2A1DD31200B16400 /* Router */,
 				96A6B2612A1DAA9200B16400 /* Model */,
@@ -122,6 +152,7 @@
 				96A6B2622A1DAAA200B16400 /* UserData.swift */,
 				96A6B27A2A1DDE9B00B16400 /* TokenData.swift */,
 				96A6B27C2A1DDFDD00B16400 /* AuthResponse.swift */,
+				965F7CAC2A1F5352000A9FB8 /* UserInfoResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +160,7 @@
 		96A6B26C2A1DD30900B16400 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				965F7CAE2A1F5409000A9FB8 /* OAuth */,
 				96A6B2772A1DDDAA00B16400 /* Service */,
 				96A6B26E2A1DD31800B16400 /* Interceptor */,
 				96A6B26F2A1DD33500B16400 /* ApiClient.swift */,
@@ -141,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				96A6B2752A1DD6A700B16400 /* AuthRouter.swift */,
+				965F7CA82A1F4EED000A9FB8 /* UserRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -157,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				96A6B2782A1DDDB700B16400 /* AuthApiService.swift */,
+				965F7CAA2A1F4FAB000A9FB8 /* UserApiService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -245,10 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965F7CAB2A1F4FAB000A9FB8 /* UserApiService.swift in Sources */,
 				96A6B2662A1DC68A00B16400 /* OtherUserProfileView.swift in Sources */,
 				96A6B2632A1DAAA200B16400 /* UserData.swift in Sources */,
 				96A6B2702A1DD33500B16400 /* ApiClient.swift in Sources */,
 				96A6B25C2A1DA4E300B16400 /* LoginView.swift in Sources */,
+				965F7CB22A1F54DA000A9FB8 /* OAuthAuthenticator.swift in Sources */,
 				96A6B2682A1DC7E000B16400 /* UserListView.swift in Sources */,
 				96A6B25E2A1DA7AE00B16400 /* RegisterView.swift in Sources */,
 				96A6B2722A1DD44D00B16400 /* BaseInterceptor.swift in Sources */,
@@ -258,8 +294,12 @@
 				96A6B2742A1DD52900B16400 /* ApiLogger.swift in Sources */,
 				96A6B2792A1DDDB700B16400 /* AuthApiService.swift in Sources */,
 				96A6B27B2A1DDE9B00B16400 /* TokenData.swift in Sources */,
+				965F7CB02A1F541B000A9FB8 /* OAuthCredential.swift in Sources */,
+				965F7CA92A1F4EED000A9FB8 /* UserRouter.swift in Sources */,
 				96A6B2762A1DD6A700B16400 /* AuthRouter.swift in Sources */,
 				96A6B27D2A1DDFDD00B16400 /* AuthResponse.swift in Sources */,
+				965F7CAD2A1F5352000A9FB8 /* UserInfoResponse.swift in Sources */,
+				965F7CA72A1F4A45000A9FB8 /* UserDefaultManager.swift in Sources */,
 				96A6B24D2A1D9AEA00B16400 /* TokenLoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +438,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,6 +469,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

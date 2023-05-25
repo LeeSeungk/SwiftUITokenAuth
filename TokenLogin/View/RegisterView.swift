@@ -5,21 +5,22 @@
 //  Created by SeungKyu on 2023/05/24.
 //
 
-//
-//  LoginView.swift
-//  TokenLogin
-//
-//  Created by SeungKyu on 2023/05/24.
-//
 
 import Foundation
 import SwiftUI
 
 
 struct RegisterView : View {
+    
+    @EnvironmentObject var userVM : UserVM
+    @Environment(\.dismiss) var dismiss
+    @State fileprivate var shouldShowAlert : Bool = false
     @State var nameInput : String = ""
     @State var emailInput : String = ""
     @State var passwordInput : String = ""
+    
+   
+    
     var body: some View {
         VStack {
             Form{
@@ -35,9 +36,22 @@ struct RegisterView : View {
                 }
                 
                 Section() {
-                    Button(action: {print("회원가입하기")}) {
+                    Button(action: {
+                        print("회원가입 버튼 클릭")
+                        userVM.register(name: nameInput, email: emailInput, password: passwordInput)
+                        
+                    }) {
                         Text("회원가입하기")
                     }
+                }
+            }
+            .onReceive(userVM.registrationSuccess, perform: {
+                print("RegisterView - registrationSuccess() called")
+                self.shouldShowAlert = true
+            })
+            .alert("회원가입이 완료되었습니다", isPresented: $shouldShowAlert) {
+                Button("확인",role: .cancel){
+                    self.dismiss()
                 }
             }
         }.navigationTitle("회원가입")

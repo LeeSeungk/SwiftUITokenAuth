@@ -9,8 +9,8 @@ import Foundation
 import Alamofire
 
 // api 호출 클라이언트
-final class ApiClient {
-    static let shared = ApiClient()
+final class ApiClient { //다른 쪽에서 상속하지 않도록 final로 선언
+    static let shared = ApiClient() //싱글톤
     
     static let BASE_URL = "https://phplaravel-574671-2229990.cloudwaysapps.com/api"
     
@@ -26,7 +26,4 @@ final class ApiClient {
         print("ApiClient - init() called")
         session = Session(interceptor: interceptors, eventMonitors: monitors)
     }
-    
-    
-    
 }

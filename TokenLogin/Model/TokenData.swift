@@ -11,14 +11,14 @@ import Foundation
 
 
 struct TokenData: Codable {
-    let tokenType: String
-    let expiresIn: Int
-    let accessToken, refreshToken: String
+    let token_type: String = ""
+    let expires_in: Int = 0
+    let access_token, refresh_token: String
     
-    enum CodingKeys: String, CodingKey {
-        case tokenType = "token_type"
-        case expiresIn = "expires_in"
-        case accessToken = "access_token"
-        case refreshToken = "refresh_token"
-    }
+//    enum CodingKeys: String, CodingKey {
+//        case tokenType = "token_type"
+//        case expiresIn = "expires_in"
+//        case accessToken = "access_token"
+//        case refreshToken = "refresh_token"
+//    }
 }

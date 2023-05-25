@@ -11,7 +11,7 @@ import SwiftUI
 struct TokenLoginApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(UserVM())
         }
     }
 }

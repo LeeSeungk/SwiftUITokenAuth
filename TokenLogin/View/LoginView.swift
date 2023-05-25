@@ -11,6 +11,10 @@ import SwiftUI
 
 struct LoginView : View {
     
+    @EnvironmentObject var userVM : UserVM
+    @Environment(\.dismiss) var dismiss
+    @State fileprivate var shouldShowAlert : Bool = false
+    
     @State var emailInput : String = ""
     @State var passwordInput : String = ""
     var body: some View {
@@ -23,9 +27,20 @@ struct LoginView : View {
                 Section {
                     Button(action: {
                         print("로그인 버튼 클릭")
-                        
+                        userVM.login(email: emailInput, password: passwordInput)
                     }, label: {
-                        Text("로그인 하기")})
+                        Text("로그인 하기")
+                        
+                    })
+                }
+            }
+            .onReceive(userVM.loginSuccess, perform: {
+                print("LoginView - LoginSuccess() called")
+                self.shouldShowAlert = true
+            })
+            .alert("로그인이 완료되었습니다", isPresented: $shouldShowAlert) {
+                Button("확인",role: .cancel){
+                    self.dismiss()
                 }
             }
         }.navigationTitle("로그인 하기")

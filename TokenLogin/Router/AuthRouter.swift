@@ -28,7 +28,6 @@ enum AuthRouter: URLRequestConvertible {
             return "user/login"
         case .tokenRefresh:
             return "user/token-refresh"
-            
         default:
             return ""
         }
@@ -57,8 +56,8 @@ enum AuthRouter: URLRequestConvertible {
             
         case let .tokenRefresh:
             var params = Parameters()
-//            params["refresh_token"] = email
-            
+            let tokenData = UserDefaultsManager.shared.getTokens()
+            params["refresh_token"] = tokenData.refresh_token
             return params
         }
     }

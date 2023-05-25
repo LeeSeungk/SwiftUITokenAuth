@@ -20,6 +20,6 @@ class BaseInterceptor: RequestInterceptor {
         request.addValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json; charset=UTF-8", forHTTPHeaderField: "Accept")
         
-//        completion(.success(<#T##URLRequest#>))
+        completion(.success(request))
     }
 }
