@@ -12,7 +12,10 @@ class OAuthAuthenticator: Authenticator {
     
     //헤더에 인증 추가
     func apply(_ credential: OAuthCredential, to urlRequest: inout URLRequest) {
+        //헤더에 Authrization 키로 Bearer 토큰값
         urlRequest.headers.add(.authorization(bearerToken: credential.accessToken))
+        //만약에 커스텀이면
+//        urlRequest.headers.add(name: "ACCESS_TOKEN", value: credential.accessToken)
     }
     // 토큰 리프레시
     func refresh(_ credential: OAuthCredential,
@@ -22,6 +25,24 @@ class OAuthAuthenticator: Authenticator {
         print("OAuthAuthenticator - refresh() called")
         //여기서 토큰 재발행 api 태운다
         
+        
+        let request = session.request(AuthRouter.tokenRefresh)
+        
+        request.responseDecodable(of: TokenResponse.self) { result in
+            switch result.result {
+            case .success(let value) :
+                
+                UserDefaultsManager.shared.setTokens(accessToekn: value.token.access_token, refreshToken: value.token.refresh_token)
+                
+                let expiration = Date(timeIntervalSinceNow: 60 * 60)
+                
+                let newCredential = OAuthCredential(accessToken: value.token.access_token, refreshToken: value.token.refresh_token, expiration: expiration)
+                
+                completion(.success(newCredential))
+            case .failure(let error) :
+                completion(.failure(error))
+            }
+        }
         // Refresh the credential using the refresh token...then call completion with the new credential.
         //
         // The new credential will automatically be stored within the `AuthenticationInterceptor`. Future requests will

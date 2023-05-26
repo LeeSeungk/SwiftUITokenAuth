@@ -16,6 +16,8 @@ class UserVM: ObservableObject {
     
     @Published var loggedInUser: UserData? = nil
     
+    @Published var users : [UserData] = []
+    
     var registrationSuccess = PassthroughSubject<(),Never>()
     
     var loginSuccess = PassthroughSubject<(), Never>()
@@ -45,5 +47,29 @@ class UserVM: ObservableObject {
                 self.loginSuccess.send()
             }.store(in: &subscription)
 
+    }
+    
+    //현재 사용자 정보 가져오기
+    func fetchCurrentUserInfo(){
+        print("UserVM - fetchCurrentUserInfo() called")
+        UserApiService.fetchCurrentUserInfo()
+            .sink { (completion: Subscribers.Completion<AFError>) in
+                print("UserVM completion: \(completion)")
+            } receiveValue: { (receivedUser: UserData) in
+                self.loggedInUser = receivedUser
+            }.store(in: &subscription)
+    }
+    
+    
+    //모든 사용자 정보 가져오기
+    func fetchUsers(){
+        print("UserVM - fetchfetchUsers() called")
+        UserApiService.fetchUsers()
+            .sink { (completion: Subscribers.Completion<AFError>) in
+                print("UserVM fetchUsers completion: \(completion)")
+            } receiveValue: { (`fetchedUsers`: [UserData]) in
+                print("UserVM fetchUsers fetchedUsers.count: \(fetchedUsers.count)")
+                self.users = fetchedUsers
+            }.store(in: &subscription)
     }
 }

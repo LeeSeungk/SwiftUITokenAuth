@@ -11,6 +11,9 @@ import SwiftUI
 //사용자 목록 뷰
 struct UserListView : View {
     
+    
+    @EnvironmentObject var userVM : UserVM
+    
     @State var users : [UserData] = []
     
     var body: some View {
@@ -49,12 +52,8 @@ struct UserListView : View {
             })
         }
         .navigationTitle("사용자 목록")
+        .onAppear(perform: { userVM.fetchUsers()})
+        .onReceive(userVM.$users, perform: { self.users = $0 })
     }
 }
 
-
-struct UserListView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserListView()
-    }
-}

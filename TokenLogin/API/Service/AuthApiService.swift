@@ -24,7 +24,7 @@ enum AuthApiService {
             .map{ receivedValue in
                 //받은 토큰 정보 어딘가에 영구 저장
                 // userdefaults, keychain
-                UserDefaultManager.shared.setTokens(accessToekn: receivedValue.token.access_token, refreshToken: receivedValue.token.refresh_token)
+                UserDefaultsManager.shared.setTokens(accessToekn: receivedValue.token.access_token, refreshToken: receivedValue.token.refresh_token)
                 return receivedValue.user
             }.eraseToAnyPublisher()
     }
@@ -40,7 +40,7 @@ enum AuthApiService {
             .map{ receivedValue in
                 //받은 토큰 정보 어딘가에 영구 저장
                 // userdefaults, keychain
-                UserDefaultManager.shared.setTokens(accessToekn: receivedValue.token.access_token, refreshToken: receivedValue.token.refresh_token)
+                UserDefaultsManager.shared.setTokens(accessToekn: receivedValue.token.access_token, refreshToken: receivedValue.token.refresh_token)
                 return receivedValue.user
             }.eraseToAnyPublisher()
     }

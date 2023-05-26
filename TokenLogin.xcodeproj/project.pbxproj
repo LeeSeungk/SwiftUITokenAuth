@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965C43EA2A202CEE006A515C /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C43E92A202CEE006A515C /* TokenResponse.swift */; };
+		965C43EC2A203441006A515C /* UserListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C43EB2A203441006A515C /* UserListResponse.swift */; };
 		965F7CA72A1F4A45000A9FB8 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F7CA62A1F4A45000A9FB8 /* UserDefaultManager.swift */; };
 		965F7CA92A1F4EED000A9FB8 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F7CA82A1F4EED000A9FB8 /* UserRouter.swift */; };
 		965F7CAB2A1F4FAB000A9FB8 /* UserApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F7CAA2A1F4FAB000A9FB8 /* UserApiService.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		965C43E92A202CEE006A515C /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		965C43EB2A203441006A515C /* UserListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListResponse.swift; sourceTree = "<group>"; };
 		965F7CA62A1F4A45000A9FB8 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		965F7CA82A1F4EED000A9FB8 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
 		965F7CAA2A1F4FAB000A9FB8 /* UserApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiService.swift; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				96A6B27A2A1DDE9B00B16400 /* TokenData.swift */,
 				96A6B27C2A1DDFDD00B16400 /* AuthResponse.swift */,
 				965F7CAC2A1F5352000A9FB8 /* UserInfoResponse.swift */,
+				965C43E92A202CEE006A515C /* TokenResponse.swift */,
+				965C43EB2A203441006A515C /* UserListResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				965F7CAB2A1F4FAB000A9FB8 /* UserApiService.swift in Sources */,
 				96A6B2662A1DC68A00B16400 /* OtherUserProfileView.swift in Sources */,
 				96A6B2632A1DAAA200B16400 /* UserData.swift in Sources */,
+				965C43EC2A203441006A515C /* UserListResponse.swift in Sources */,
 				96A6B2702A1DD33500B16400 /* ApiClient.swift in Sources */,
 				96A6B25C2A1DA4E300B16400 /* LoginView.swift in Sources */,
 				965F7CB22A1F54DA000A9FB8 /* OAuthAuthenticator.swift in Sources */,
@@ -301,6 +308,7 @@
 				965F7CAD2A1F5352000A9FB8 /* UserInfoResponse.swift in Sources */,
 				965F7CA72A1F4A45000A9FB8 /* UserDefaultManager.swift in Sources */,
 				96A6B24D2A1D9AEA00B16400 /* TokenLoginApp.swift in Sources */,
+				965C43EA2A202CEE006A515C /* TokenResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

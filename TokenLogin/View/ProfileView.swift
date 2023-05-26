@@ -11,6 +11,9 @@ import SwiftUI
 
 struct ProfileView : View {
     
+    @EnvironmentObject var userVM : UserVM
+    
+    
 //    @State var userData : UserData? = nil
     @State var id: String = ""
     @State var name: String = ""
@@ -66,19 +69,27 @@ struct ProfileView : View {
                 Section {
                     Button {
                         print("새로고침 버튼 클릭")
+                        userVM.fetchCurrentUserInfo()
                     } label: {
                         Text("새로고침")
                     }
 
                 }
             }
+            
+            .onAppear {
+                print("ProfileView onAppear() called")
+                userVM.fetchCurrentUserInfo()
+            }
+            .onReceive(userVM.$loggedInUser, perform: { loggedInUser in
+                print("ProfileView onReceive() called / loggedInUser")
+                guard let user = loggedInUser else { return }
+                self.id = "\(user.id)"
+                self.name = user.name
+                self.email = user.email
+                self.avatarImg = user.avatar
+            })
         }.navigationTitle("내 프로필")
     }
 }
 
-
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
-    }
-}
